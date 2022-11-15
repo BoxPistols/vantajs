@@ -1,5 +1,6 @@
 /**
- * el: "#your-element-selector",
+VANTA.GLOBE({
+  el: "#your-element-selector",
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
@@ -11,6 +12,7 @@
   color2: 0xc3d6eb,
   size: 1.10,
   backgroundColor: 0x0
+})
  */
 
 import React, { useState, useEffect, useRef } from "react";
@@ -31,18 +33,22 @@ export const VtGlobe = () => {
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
+          size: 1.1,
           minHeight: 400.0,
           minWidth: 320.0,
           scale: 1.2,
           scaleMobile: 1.0,
+          backgroundColor: 0x0,
+          color: 0x6b6bfa,
           color1: 0x1eff,
+          color2: 0xc3d6eb,
           birdSize: 1.9,
           wingSpan: 12.0,
           speedLimit: 3.0,
           separation: 31.0,
           alignment: 67.0,
           cohesion: 31.0,
-          quantity: 4.0 // background: false
+          quantity: 4.0, // background: false
         })
       );
     }
@@ -56,7 +62,7 @@ export const VtGlobe = () => {
       style={{
         color: "#cdf",
         marginTop: "0px",
-        padding: "8vh 4vw 400px"
+        padding: "8vh 4vw 400px",
       }}
     >
       <h1>Hello CodeSandbox</h1>
